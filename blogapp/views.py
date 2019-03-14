@@ -25,6 +25,10 @@ def create(request): #입력받은 내용을 데이터베이스에 넣어주는 
     blog.save()
 
     return redirect('/blog/'+str(blog.id))
+
+def portfolio(request):
+
+    return render(request, 'portfolio.html')
 #쿼리셋과 메소드의 형식
 # 모델.쿼리셋(objects).메소드
     
