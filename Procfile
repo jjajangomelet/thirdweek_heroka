@@ -1,0 +1,1 @@
+web: gunicorn thirdweek.wsgi --log-file -
